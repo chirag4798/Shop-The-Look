@@ -1,6 +1,6 @@
 # Shop The Look
 
-End-to-end fashion product recommendation engine based on visual similarity of items.
+End-to-end content based fashion product recommendation engine based on visual similarity of items.
 
 **This blog is inspired by the research paper published by Myntra**  
 <a href="https://imgur.com/FEklYUC" align="center"><img src="https://i.imgur.com/FEklYUC.png" title="source: imgur.com"/></a>  

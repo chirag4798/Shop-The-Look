@@ -21,7 +21,7 @@ The proposed solution is a Content-Based recommendation system that involves var
 To get started with the Fashion Recommendation Engine, we'll need a catalog/database consisting of fashion products to recommend. Unless you have a database of these items lying around we'll need to acquire this data using simple web scraping tools in python. Since we'll focus on recommending items accross various categories we'll need a diverse set of fashion products to populate the database. We can use Myntra's e-commerce website to query images using specific keywords and later save the product details for the results obtained. This way we can categorize products into various sections which would make it easier while recommeding items. We'll use Selenium package from python, its the most popular browser automation tool mainly used to carry out web-product testing. For that we'll require webdriver, for chrome users, you can get it from <a href="https://chromedriver.chromium.org/">here</a>,  make sure the version that you download matches with the version of chrome on your computer. For more details on webscraping e-commerce websites using python follow this article "<a href="https://medium.com/analytics-vidhya/web-scraping-e-commerce-sites-using-selenium-python-55fd980fe2fc">Webscraping e-commerce websites using python</a>".  After scraping the image and product urls, you either use it to download the images into your local system or save the image and product urlspair to a flat file and use it later.
 </p>
 
-```
+```python
 # import necessary libraries
 import time
 from selenium import webdriver as wb

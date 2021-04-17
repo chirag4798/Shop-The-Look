@@ -7,6 +7,7 @@ End-to-end content based fashion product recommendation engine based on visual s
 
 **This blog is inspired by the research paper published by Myntra**  
 <p align="center"><a href="https://imgur.com/FEklYUC"><img src="https://i.imgur.com/FEklYUC.png" title="source: imgur.com"/></a></p>  
+  
 [Buy Me That Look: An Approach for Recommending Fashion Products](https://arxiv.org/pdf/2008.11638.pdf)
           
 ## Introduction

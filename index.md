@@ -91,5 +91,84 @@ There is huge disparity in the distribution among the type of clothing. Around 6
 <p align="center"><a href="https://imgur.com/nQ1iLwx"><img src="https://i.imgur.com/nQ1iLwx.png" title="source: imgur.com" /></a></p>
 
 
+## Gender Classification
+<p align="justify">
+In order to recommend relevant items to the user we'll have to first detect the gender of the person present in the query image. Doing so will allow us to generate and query embeddings only on certain subsets of the catalog instead of the whole database. This will also help us in reducing irrelevant recommendations to the user based on their gender. For this task we'll make use of the <a href="https://www.kaggle.com/playlist/men-women-classification">Man/Woman classification dataset from Kaggle</a>. This is a manually collected and cleaned dataset containing 3354 pictures (jpg) of men (1414 files) and women (1940 files) that includes full body and upper body images of men and women. This is ideal for our use case since we'll mostly have full body images of models wearing various fashion items. For classification we can use a ResNET50 backbone initialized with 'Imagenet' weights attached to a fully connected network that outputs the probability scores for the two classes. We'll freeze all the layers from the backbone since the task is coparitively easy to achieve and inorder to avoid overfitting to this dataset. Below is a code snippet for the model used for classification.
+</p>          
+
+```python
+from tensorflow.keras.models import Model
+from tensorflow.keras.applications.resnet import ResNET50
+from tensorflow.keras.layers import Flatten, Dense, Dropout, BatchNormalization
+
+base_model = ResNet50(weights="imagenet", input_shape=(224,224,3), include_top=False)
+
+for layer in base_model.layers:
+    layer.trainable = False
+
+x = Flatten()(base_model.output)
+x = Dense(512, activation="relu")(x)
+x = Dropout(0.3)(x)
+x = BatchNormalization()(x)
+x = Dense(128, activation="relu")(x)
+x = Dropout(0.3)(x)
+x = BatchNormalization()(x)
+
+output = Dense(1, activation="sigmoid")(x)
+
+gender_classifier = Model(base_model.input, output, name="Gender_Classifier")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

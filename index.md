@@ -1,5 +1,9 @@
 # Shop The Look
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YlWKfkpZ9h0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[![Webapp Demo](https://img.youtube.com/vi/YlWKfkpZ9h0/0.jpg)](https://www.youtube.com/watch?v=YlWKfkpZ9h0)
+
 End-to-end content based fashion product recommendation engine based on visual similarity of items.
 
 **This blog is inspired by the research paper published by Myntra**  
@@ -119,7 +123,11 @@ output = Dense(1, activation="sigmoid")(x)
 gender_classifier = Model(base_model.input, output, name="Gender_Classifier")
 ```
 
-##
+## Object Detection & Localization
+
+<p align="justify">
+       
+</p>
 
 
 

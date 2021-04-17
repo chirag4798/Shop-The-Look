@@ -3,7 +3,7 @@
 End-to-end content based fashion product recommendation engine based on visual similarity of items.
 
 **This blog is inspired by the research paper published by Myntra**  
-<a href="https://imgur.com/FEklYUC" align="center"><img src="https://i.imgur.com/FEklYUC.png" title="source: imgur.com"/></a>  
+<p align="center"><a href="https://imgur.com/FEklYUC"><img src="https://i.imgur.com/FEklYUC.png" title="source: imgur.com"/></a></p>  
 [Buy Me That Look: An Approach for Recommending Fashion Products](https://arxiv.org/pdf/2008.11638.pdf)
           
 ## Introduction
@@ -56,6 +56,39 @@ for search_term in search_terms:
         break
 ```
 ## Exploratory Data Analysis
+<p align="justify">
+Now that we've gathered the catalog, lets do some exploratory analysis on it. The dataset consists of 10310 fashion products in various categories. The categories being:
+</p>    
+
+<p align="center"><a href="https://imgur.com/bdbH1xs"><img src="https://i.imgur.com/bdbH1xs.png" title="source: imgur.com" /></a></p>
+
+<p align="center"><a href="https://imgur.com/D1DzBdb"><img src="https://i.imgur.com/D1DzBdb.png" title="source: imgur.com" /></a></p>
+
+<p align="center"><a href="https://imgur.com/uQM1cYf"><img src="https://i.imgur.com/uQM1cYf.png" title="source: imgur.com" /></a></p>
+
+<p align="center"><a href="https://imgur.com/w4Upxdr"><img src="https://i.imgur.com/w4Upxdr.png" title="source: imgur.com" /></a></p>
+
+<p align="center"><a href="https://imgur.com/TczHf8t"><img src="https://i.imgur.com/TczHf8t.png" title="source: imgur.com" /></a></p>
+
+<p align="center"><a href="https://imgur.com/KKcSvpO"><img src="https://i.imgur.com/KKcSvpO.png" title="source: imgur.com" /></a></p>
+  
+<p align="justify">
+The fashion products are not equally split among the two genders, there are 5992 Mens Products whereas as just 4318 Womens products. The plot below is a visual representation of the products split by genders.
+</p> 
+
+<p align="center"><a href="https://imgur.com/btlsNp5" align="center"><img src="https://i.imgur.com/btlsNp5.png" title="source: imgur.com" /></a></p>
+
+<p align="justify">
+Distribution across the categories of Topwear - 3770, Bottomwear - 3524 and Footwear - 3016.
+</p> 
+
+<p align="center"><a href="https://imgur.com/FqAAPjC"><img src="https://i.imgur.com/FqAAPjC.png" title="source: imgur.com" /></a></p>
+
+<p align="justify">
+There is huge disparity in the distribution among the type of clothing. Around 60% of the fashion items are of type casual whereas formal and party wear occupy just 30% and 10% respectively. The recommendations for casual would obviously be better considering the variety of items present in them. Here's a visual representation.
+</p> 
+
+<p align="center"><a href="https://imgur.com/nQ1iLwx"><img src="https://i.imgur.com/nQ1iLwx.png" title="source: imgur.com" /></a></p>
 
 
 

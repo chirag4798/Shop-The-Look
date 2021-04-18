@@ -160,7 +160,23 @@ It is clear that YOLO object detection are faster by a huge margin compared to o
 <p align="center">
 <a href="https://jonathan-hui.medium.com/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359"><img src="https://miro.medium.com/max/1200/1*tOkQQ5g2Tp5xWShaO4VUpQ.jpeg">Source: Object Detection Speed and Accuracy Comparision</a>
 </p>  
+<p align="justify">
+From the plot above we can see that RetinaNET has the highest mAP score of 40.8 followed by Faster-RCNN, FPN and YOLO. The difference between the latter three methods is not huge compared to their difference with RetinaNET which is SOTA in object detection. We can safely assume that YOLO will provide us with the right balance of Accuracy and Speed for our task of Fashion product detection and localisation. The research paper by Myntra used Mask RCNN for their object detection module since they had the luxury to run that part offline, however we do not have that luxury if we want to recommend similar products in real time using a web application. Hence we'll use YOLO object detection for detecting fashion products in three categories - topwear, bottomwear and footwear for our simplicity, we can easily improve our recommendation engine by including more and better categories for object detection like classifying the type of shirts, t-shirts, bags, sunglasses, trousers, jeans etc. YOLO refers to “You Only Look Once” is a versatile object detection model. YOLO algorithms divide a given input images into the SxS grid system. Each grid is responsible for object detection. Now the Grid cells predict the boundary boxes for the detected object. For every box, we have five main attributes: x and y for coordinates, w and h for width and height of the object, and a confidence score for that the box containing the object. 
+Follow this blog for training an object detector using your custom dataset - "<a target="_blank" href="https://blog.roboflow.com/how-to-train-yolov5-on-a-custom-dataset/">YOLOv5 Training for Custom Dataset</a>"</p>
+<p align="center"><img src="https://www.pyimagesearch.com/wp-content/uploads/2018/11/yolo_design.jpg"></p> 
+<p align="center"><a  target="_blank" href="https://arxiv.org/pdf/1506.02640v1.pdf">Source: YOLO - You Only Look Once</a></p>  
 
+
+
+<p align="justify">
+For training the custom Object Detection model we'll use Transfer Learning. We'll load YOLOv5s (s stands for small variant of YOLOv5) weights trained on the COCO Dataset and use transfer learning to fine-tune the model for our use case. I've created a dataset of 180 images (135 train and 45 validation) with annotated topwear, bottomwear and footwear.  We were able to achieve a mAP score of 0.94 @ 0.5 IoU threshold on a test set of 45 images. Here are some object detection results on topwear, bottomwear and footwear detection.
+</p>  
+
+<p align="center">
+<a href="https://imgur.com/fJdtXsB"><img src="https://i.imgur.com/fJdtXsB.png" width=312 height=500 title="source: imgur.com" /></a>
+<a href="https://imgur.com/k4GxQ86"><img src="https://i.imgur.com/k4GxQ86.png" width=312 height=500 title="source: imgur.com" /></a>
+<a href="https://imgur.com/DDlE3NB"><img src="https://i.imgur.com/DDlE3NB.png" width=312 height=500 title="source: imgur.com" /></a>
+</p>
 
 
 

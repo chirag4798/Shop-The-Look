@@ -126,10 +126,30 @@ gender_classifier = Model(base_model.input, output, name="Gender_Classifier")
 ## Object Detection & Localization
 
 <p align="justify">
-       
+In order to recommend similar products we'll first need to detect all the products in a given image, and for generating the embeddings we'll need to crop out the product from n image. Object detection is one of the most interesting aspect of Computer Vision. Most object detection systems have some kind of trade off between inference speed and detection accuracy. In order to better understand object we'll need to understand a metric called 'mAP' or Mean Average Precision, for object detection whether a detection is considered correct or not depends on the IoU (Intersection over Union) threshold. The IoU score for a predicted bounding box and actual bounding box is defined as
 </p>
+<p align="center">
+<a align="center" href="https://www.codecogs.com/eqnedit.php?latex=IoU&space;=&space;\frac{\text{Area&space;of&space;Intersection}}{\text{Area&space;of&space;Union}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?IoU&space;=&space;\frac{\text{Area&space;of&space;Intersection}}{\text{Area&space;of&space;Union}}" title="IoU = \frac{\text{Area of Intersection}}{\text{Area of Union}}" /></a>  
+    
+<a href="https://miro.medium.com/max/960/1*FrmKLxCtkokDC3Yr1wc70w.png"><img src="https://miro.medium.com/max/960/1*FrmKLxCtkokDC3Yr1wc70w.png"></a>
+</p>
+<p align="justify">
+For a pre-defined IoU threshold we can define if a detection was accurate or not if the IoU is greater than the thresold. Based on the detections Precision and Recall is defined as.
+</p>
+<p align="center">
+<a href="https://www.codecogs.com/eqnedit.php?latex=\text{Precision}&space;=&space;\frac{\text{TP}}{\text{TP&space;&plus;&space;FP}}&space;\text{&space;\&&space;Recall}&space;=&space;\frac{\text{TP}}{\text{TP&space;&plus;&space;FN}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\text{Precision}&space;=&space;\frac{\text{TP}}{\text{TP&space;&plus;&space;FP}}&space;\text{&space;\&&space;Recall}&space;=&space;\frac{\text{TP}}{\text{TP&space;&plus;&space;FN}}" title="\text{Precision} = \frac{\text{TP}}{\text{TP + FP}} \text{ \& Recall} = \frac{\text{TP}}{\text{TP + FN}}" /></a>
 
-
+Where TP = True Positive, FP = False Positive & FN = False Negative
+</p>
+<p align="justify">
+The average precision is calculated by using the Area Under the Precision and Recall Curve.
+</p>
+<p align="center">
+<a href="https://miro.medium.com/max/632/0*4lq6j_CHfvqQuvqn.png"><img src="https://miro.medium.com/max/632/0*4lq6j_CHfvqQuvqn.png"></a>
+</p> 
+<p align="justify">
+The Mean Average Precision is calculated by taking mean of the Average Precision values over different values of threshold, for example in the COCO Primary Challenge the mAP (Average Precision) was calculated by averaging the Precision scores over a range of IoU thresolds from 0.5 to 0.95 with a step size of 0.05 and finally for calculating the mAP the mean of the AP's is considered over all the classes. For more detailed explanation of mAp follow this blog - "<a href="https://towardsdatascience.com/breaking-down-mean-average-precision-map-ae462f623a52">Breaking Down Mean Average Precision</a>". Now that we know how Object Detection Systems are evaluated let's various methods for object detection.
+</p>
 
 
 

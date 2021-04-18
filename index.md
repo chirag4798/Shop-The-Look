@@ -163,9 +163,26 @@ It is clear that YOLO object detection are faster by a huge margin compared to o
 <p align="justify">
 From the plot above we can see that RetinaNET has the highest mAP score of 40.8 followed by Faster-RCNN, FPN and YOLO. The difference between the latter three methods is not huge compared to their difference with RetinaNET which is SOTA in object detection. We can safely assume that YOLO will provide us with the right balance of Accuracy and Speed for our task of Fashion product detection and localisation. The research paper by Myntra used Mask RCNN for their object detection module since they had the luxury to run that part offline, however we do not have that luxury if we want to recommend similar products in real time using a web application. Hence we'll use YOLO object detection for detecting fashion products in three categories - topwear, bottomwear and footwear for our simplicity, we can easily improve our recommendation engine by including more and better categories for object detection like classifying the type of shirts, t-shirts, bags, sunglasses, trousers, jeans etc. YOLO refers to “You Only Look Once” is a versatile object detection model. YOLO algorithms divide a given input images into the SxS grid system. Each grid is responsible for object detection. Now the Grid cells predict the boundary boxes for the detected object. For every box, we have five main attributes: x and y for coordinates, w and h for width and height of the object, and a confidence score for that the box containing the object. 
 Follow this blog for training an object detector using your custom dataset - "<a target="_blank" href="https://blog.roboflow.com/how-to-train-yolov5-on-a-custom-dataset/">YOLOv5 Training for Custom Dataset</a>"</p>
+
 <p align="center"><img src="https://www.pyimagesearch.com/wp-content/uploads/2018/11/yolo_design.jpg"></p> 
 <p align="center"><a  target="_blank" href="https://arxiv.org/pdf/1506.02640v1.pdf">Source: YOLO - You Only Look Once</a></p>  
 
+<p align="justify">Code snippet for training YOLOv5 model on custom dataset using Pytorch and Ultralytics Github repo.</p>
+
+
+```python
+!git clone https://github.com/ultralytics/yolov5
+%cd yolov5
+%pip install -qr requirements.txt 
+
+import torch
+print('Setup complete. Using torch %s %s' % (torch.__version__, torch.cuda.get_device_properties(0) if torch.cuda.is_available() else 'CPU'))
+
+!python train.py --img 640 --batch 2 --epochs 150 --data custom_dataset.yaml --weights /content/yolov5/weights/yolov5s.pt --nosave --cache
+```
+
+<p align="justify">Your 'custom_dataset.yaml' file should look something like this</p>
+<p align="center"><a href="https://imgur.com/GDEFxKe"><img src="https://i.imgur.com/GDEFxKe.png" title="source: imgur.com" /></a></p>
 
 
 <p align="justify">

@@ -138,7 +138,8 @@ For a pre-defined IoU threshold we can define if a detection was accurate or not
 </p>
 <p align="center">
 <a href="https://www.codecogs.com/eqnedit.php?latex=\text{Precision}&space;=&space;\frac{\text{TP}}{\text{TP&space;&plus;&space;FP}}&space;\text{&space;\&&space;Recall}&space;=&space;\frac{\text{TP}}{\text{TP&space;&plus;&space;FN}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\text{Precision}&space;=&space;\frac{\text{TP}}{\text{TP&space;&plus;&space;FP}}&space;\text{&space;\&&space;Recall}&space;=&space;\frac{\text{TP}}{\text{TP&space;&plus;&space;FN}}" title="\text{Precision} = \frac{\text{TP}}{\text{TP + FP}} \text{ \& Recall} = \frac{\text{TP}}{\text{TP + FN}}" /></a>
-
+</p>
+<p align="justify">
 Where TP = True Positive, FP = False Positive & FN = False Negative
 </p>
 <p align="justify">

@@ -149,7 +149,7 @@ The average precision is calculated by using the Area Under the Precision and Re
 <a href="https://miro.medium.com/max/632/0*4lq6j_CHfvqQuvqn.png"><img src="https://miro.medium.com/max/632/0*4lq6j_CHfvqQuvqn.png"></a>
 </p> 
 <p align="justify">
-The Mean Average Precision is calculated by taking mean of the Average Precision values over different values of threshold, for example in the COCO Primary Challenge the mAP (Average Precision) was calculated by averaging the Precision scores over a range of IoU thresolds from 0.5 to 0.95 with a step size of 0.05 and finally for calculating the mAP the mean of the AP's is considered over all the classes. For more detailed explanation of mAp follow this blog - "<a href="https://towardsdatascience.com/breaking-down-mean-average-precision-map-ae462f623a52">Breaking Down Mean Average Precision</a>". Now that we know how Object Detection Systems are evaluated let's checkout various methods for object detection.
+The Mean Average Precision is calculated by taking mean of the Average Precision values over different values of threshold, for example in the COCO Primary Challenge the mAP was calculated by averaging the AP scores over a range of IoU thresolds from 0.5 to 0.95 with a step size of 0.05 and finally taking the mean of the AP scores over all the classes. For more detailed explanation of mAP follow this blog - "<a href="https://towardsdatascience.com/breaking-down-mean-average-precision-map-ae462f623a52">Breaking Down Mean Average Precision</a>". Now that we know how Object Detection Systems are evaluated let's checkout various methods for object detection.
 </p>
 
 

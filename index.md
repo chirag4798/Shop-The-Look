@@ -470,7 +470,8 @@ outputs = tflite_model(inputs)
 <iframe width="560" height="315" align="center" src="
 https://www.youtube.com/embed/YlWKfkpZ9h0
 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+  
+  
 ## Further Imporvements & Future Work 
 
 <p align="justify">
@@ -498,50 +499,3 @@ This system can be considered as a POC (Proof of Concept) for image similarity b
 - [Github](https://github.com/chirag4798)
 - [Linkedin](https://www.linkedin.com/in/chirag-shetty-85250913a/)
 - [Website](https://chirag4798.github.io/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

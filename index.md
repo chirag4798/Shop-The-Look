@@ -6,9 +6,9 @@
 End-to-end content based fashion product recommendation engine based on visual similarity of items.
 
 **This blog is inspired by the research paper published by Myntra**  
-<p align="center"><a href="https://imgur.com/FEklYUC"><img src="https://i.imgur.com/FEklYUC.png" title="source: imgur.com"/></a></p>  
-  
-[Buy Me That Look: An Approach for Recommending Fashion Products](https://arxiv.org/pdf/2008.11638.pdf)
+<p align="center">
+<a href="https://arxiv.org/pdf/2008.11638.pdf"><img src="https://i.imgur.com/FEklYUC.png">Buy Me That Look: An Approach for Recommending Fashion Products</a>
+</p> 
           
 ## Introduction
 <p align="justify">
@@ -149,10 +149,17 @@ The average precision is calculated by using the Area Under the Precision and Re
 <a href="https://miro.medium.com/max/632/0*4lq6j_CHfvqQuvqn.png"><img src="https://miro.medium.com/max/632/0*4lq6j_CHfvqQuvqn.png"></a>
 </p> 
 <p align="justify">
-The Mean Average Precision is calculated by taking mean of the Average Precision values over different values of threshold, for example in the COCO Primary Challenge the mAP was calculated by averaging the AP scores over a range of IoU thresolds from 0.5 to 0.95 with a step size of 0.05 and finally taking the mean of the AP scores over all the classes. For more detailed explanation of mAP follow this blog - "<a href="https://towardsdatascience.com/breaking-down-mean-average-precision-map-ae462f623a52">Breaking Down Mean Average Precision</a>". Now that we know how Object Detection Systems are evaluated let's checkout various methods for object detection.
+The Mean Average Precision is calculated by taking mean of the Average Precision values over different values of threshold, for example in the COCO Primary Challenge the mAP was calculated by averaging the AP scores over a range of IoU thresolds from 0.5 to 0.95 with a step size of 0.05 and finally taking the mean of the AP scores over all the classes. For more detailed explanation of mAP follow this blog - "<a href="https://towardsdatascience.com/breaking-down-mean-average-precision-map-ae462f623a52">Breaking Down Mean Average Precision</a>". Now that we know how Object Detection Systems are evaluated let's checkout various methods for object detection. We'll compare various object detection model's performance against the MS COCO Dataset that contains 80 classes. We'll look at the Inference speed and mAP scores. Below is a plot showing the highest and lowest Frames Per Second (FPS) values reported in their respective papers.
 </p>
-
-
+<p align="center">
+<a href="https://jonathan-hui.medium.com/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359"><img src="https://miro.medium.com/max/1200/1*EQKFp_c6jMYcDZbIwbEOzA.png">Source: Object Detection Speed and Accuracy Comparision</a>
+</p>  
+<p align="justify">
+It is clear that YOLO object detection are faster by a huge margin compared to other object detection methods, however an important thing to note is the plot doesn't mention the mAP scorees for the models with the highest inference speeds. Now lets look at mAP scores for various methods against the MS COCO Dataset.  
+</p>
+<p align="center">
+<a href="https://jonathan-hui.medium.com/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359"><img src="https://miro.medium.com/max/1200/1*tOkQQ5g2Tp5xWShaO4VUpQ.jpeg">Source: Object Detection Speed and Accuracy Comparision</a>
+</p>  
 
 
 

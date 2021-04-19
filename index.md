@@ -471,7 +471,7 @@ outputs = tflite_model(inputs)
 </p>
 
 
-<hr width=450 align="center">
+<hr width=600 align="center">
 <p align="center">Query</p>
 <p align="center"><a href="https://imgur.com/PR5bKNP"><img width=200 height=300 src="https://i.imgur.com/PR5bKNP.png" title="source: imgur.com" /></a></p>
 

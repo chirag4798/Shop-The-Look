@@ -120,11 +120,15 @@ output = Dense(1, activation="sigmoid")(x)
 
 gender_classifier = Model(base_model.input, output, name="Gender_Classifier")
 ```
+<p align="center">
+<a href="https://imgur.com/WkLwNlj"><img width=400 height=300 src="https://i.imgur.com/WkLwNlj.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/1AhheVx"><img width=400 height=300 src="https://i.imgur.com/1AhheVx.png" title="source: imgur.com" /></a>
+</p>
 
 ## Object Detection & Localization
 
 <p align="justify">
-In order to recommend similar products we'll first need to detect all the products in a given image, and for generating the embeddings we'll need to crop out the product from n image. Object detection is one of the most interesting aspect of Computer Vision. Most object detection systems have some kind of trade off between inference speed and detection accuracy. In order to better understand object we'll need to understand a metric called 'mAP' or Mean Average Precision, for object detection whether a detection is considered correct or not depends on the IoU (Intersection over Union) threshold. The IoU score for a predicted bounding box and actual bounding box is defined as
+In order to recommend similar products we'll first need to detect all the products in a given image, and for generating the embeddings we'll need to crop out the product from an image. Object detection is one of the most interesting aspect of Computer Vision. Most object detection systems have some kind of trade off between inference speed and detection accuracy. In order to better understand object we'll need to understand a metric called 'mAP' or Mean Average Precision, for object detection whether a detection is considered correct or not depends on the IoU (Intersection over Union) threshold. The IoU score for a predicted bounding box and actual bounding box is defined as
 </p>
 <p align="center">
 <a align="center" href="https://www.codecogs.com/eqnedit.php?latex=IoU&space;=&space;\frac{\text{Area&space;of&space;Intersection}}{\text{Area&space;of&space;Union}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?IoU&space;=&space;\frac{\text{Area&space;of&space;Intersection}}{\text{Area&space;of&space;Union}}" title="IoU = \frac{\text{Area of Intersection}}{\text{Area of Union}}" /></a>  
@@ -366,6 +370,12 @@ class SiameseModel(Model):
 siamese_model = SiameseModel(siamese_network)
 siamese_model.compile(optimizer=optimizers.Adam(1e-4))
 ```
+<p align="center">
+<a href="https://imgur.com/Mjfch11"><img width=250 height=150 src="https://i.imgur.com/Mjfch11.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/zViJebW"><img width=250 height=150 src="https://i.imgur.com/zViJebW.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/P3HVgMQ"><img width=250 height=150 src="https://i.imgur.com/P3HVgMQ.png" title="source: imgur.com" /></a> 
+</p>
+
 <p align="justify">Having trained the embeddingg generation model, we have to generate and save embeddings for the catalog of fashion products.</p>
 
 ## Final Pipeline
@@ -378,11 +388,11 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model()
 
 # Path to your saved tensorflow-keras model
-SAVED_MODEL_PATH = "model.h5"
+TFKERAS_MODEL_PATH = "model.h5"
 
-# Path to save the tensorfloe-lite model
+# Path to save the tensorflow-lite model
 TFLITE_MODEL_PATH = "model.tflite"
-model = load_model(SAVED_MODEL_PATH)
+model = load_model(TFKERAS_MODEL_PATH)
 
 tf_lite_converter = tf.lite.TFLiteConverter.from_keras_model(model)
 tf_lite_converter.optimizations = [tf.lite.Optimize.OPTIMIZE_FOR_SIZE]

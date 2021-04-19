@@ -187,6 +187,12 @@ For training the custom Object Detection model we'll use Transfer Learning. We'l
 </p>  
 
 <p align="center">
+<a href="https://imgur.com/TGaoCEm"><img src="https://i.imgur.com/TGaoCEm.png" title="source: imgur.com" /></a>
+</p>
+
+<p align="center">Training summary for Topwear, Bottomwear and Footwear detection and localization</p>
+
+<p align="center">
 <a href="https://imgur.com/fJdtXsB"><img src="https://i.imgur.com/fJdtXsB.png" width=312 height=500 title="source: imgur.com" /></a>
 <a href="https://imgur.com/k4GxQ86"><img src="https://i.imgur.com/k4GxQ86.png" width=312 height=500 title="source: imgur.com" /></a>
 <a href="https://imgur.com/DDlE3NB"><img src="https://i.imgur.com/DDlE3NB.png" width=312 height=500 title="source: imgur.com" /></a>
@@ -494,6 +500,7 @@ This system can be considered as a POC (Proof of Concept) for image similarity b
 
 ## References
 
+- [Applied AI Course's Machine Learning Course](https://www.appliedaicourse.com/course/11/Applied-Machine-learning-course)
 - [Buy Me That Look: An Approach for Recommending Fashion Products](https://arxiv.org/pdf/2008.11638.pdf)
 - [Webscraping e-commerce websites using python](https://medium.com/analytics-vidhya/web-scraping-e-commerce-sites-using-selenium-python-55fd980fe2fc)
 - [Man/Woman classification dataset from Kaggle](https://www.kaggle.com/playlist/men-women-classification)

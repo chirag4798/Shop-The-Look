@@ -469,9 +469,9 @@ outputs = tflite_model(inputs)
 
 <p align="center">Recommendation</p>
 <p align="center">
-<a href="https://imgur.com/HeZwlRF"><img width=200 height=300 src="https://i.imgur.com/HeZwlRF.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/PntAMKK"><img width=200 height=300 src="https://i.imgur.com/PntAMKK.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/FFofHKn"><img width=200 height=300 src="https://i.imgur.com/FFofHKn.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/HeZwlRF"><img width=175 height=250 src="https://i.imgur.com/HeZwlRF.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/PntAMKK"><img width=175 height=250 src="https://i.imgur.com/PntAMKK.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/FFofHKn"><img width=175 height=250 src="https://i.imgur.com/FFofHKn.png" title="source: imgur.com" /></a>
 </p>
 
 <iframe width="560" height="315" align="center" src="

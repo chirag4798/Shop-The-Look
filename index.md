@@ -447,7 +447,7 @@ outputs = tflite_model(inputs)
 </p>
 
 
-<hr width=800 align="center">
+<hr width=600 align="center">
 <p align="center">Query</p>
 <p align="center"><a href="https://imgur.com/eruv5cw"><img src="https://i.imgur.com/eruv5cw.png" title="source: imgur.com" /></a></p>
 
@@ -459,7 +459,7 @@ outputs = tflite_model(inputs)
 </p>
 
 
-<hr width=800 align="center">
+<hr width=600 align="center">
 <p align="center">Query</p>
 <p align="center"><a href="https://imgur.com/dNAXuRE"><img width=200 height=300 src="https://i.imgur.com/dNAXuRE.png" title="source: imgur.com" /></a></p>
 

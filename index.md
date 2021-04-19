@@ -434,9 +434,8 @@ outputs = tflite_model(inputs)
 </p>
 
 <p align="justify">Here are some example recommendations from the final pipeline. The first image is the query image followed by the recommendations</p>  
-<hr width=800 align="center">
 
-
+<hr width=600 align="center">
 <p align="center">Query</p>
 <p align="center"><a href="https://imgur.com/UUeoS9e"><img width=200 height=300  src="https://i.imgur.com/UUeoS9e.png" title="source: imgur.com" /></a></p>
 

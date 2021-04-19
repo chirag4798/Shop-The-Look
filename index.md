@@ -434,36 +434,36 @@ outputs = tflite_model(inputs)
 </p>
 
 <p align="justify">Here are some example recommendations from the final pipeline. The first image is the query image followed by the recommendations</p>  
-
+<hr width=800 align="center">
 <p align="center">Query</p>
 <p align="center"><a href="https://imgur.com/UUeoS9e"><img width=200 height=300  src="https://i.imgur.com/UUeoS9e.png" title="source: imgur.com" /></a></p>
 
 <p align="center">Recommendation</p>
 <p align="center">
-<a href="https://imgur.com/TABqgmQ"><img width=200 height=300 src="https://i.imgur.com/TABqgmQ.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/YXPYfu5"><img width=200 height=300 src="https://i.imgur.com/YXPYfu5.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/TABqgmQ"><img width=175 height=250 src="https://i.imgur.com/TABqgmQ.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/YXPYfu5"><img width=175 height=250 src="https://i.imgur.com/YXPYfu5.png" title="source: imgur.com" /></a>
 </p>
-
+<hr width=800 align="center">
 <p align="center">Query</p>
 <p align="center"><a href="https://imgur.com/eruv5cw"><img src="https://i.imgur.com/eruv5cw.png" title="source: imgur.com" /></a></p>
 
 <p align="center">Recommendation</p>
 <p align="center">
-<a href="https://imgur.com/no2NliH"><img width=200 height=300 src="https://i.imgur.com/no2NliH.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/RkWAItw"><img width=200 height=300 src="https://i.imgur.com/RkWAItw.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/q9if7Ow"><img width=200 height=300 src="https://i.imgur.com/q9if7Ow.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/no2NliH"><img width=175 height=250 src="https://i.imgur.com/no2NliH.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/RkWAItw"><img width=175 height=250 src="https://i.imgur.com/RkWAItw.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/q9if7Ow"><img width=175 height=250 src="https://i.imgur.com/q9if7Ow.png" title="source: imgur.com" /></a>
 </p>
-
+<hr width=800 align="center">
 <p align="center">Query</p>
 <p align="center"><a href="https://imgur.com/dNAXuRE"><img width=200 height=300 src="https://i.imgur.com/dNAXuRE.png" title="source: imgur.com" /></a></p>
 
 <p align="center">Recommendation</p>
 <p align="center">
-<a href="https://imgur.com/lPkUTyy"><img width=200 height=300 src="https://i.imgur.com/lPkUTyy.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/Bv5V3oe"><img width=200 height=300 src="https://i.imgur.com/Bv5V3oe.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/rkZuI4I"><img width=200 height=300 src="https://i.imgur.com/rkZuI4I.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/lPkUTyy"><img width=175 height=250 src="https://i.imgur.com/lPkUTyy.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/Bv5V3oe"><img width=175 height=250 src="https://i.imgur.com/Bv5V3oe.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/rkZuI4I"><img width=175 height=250 src="https://i.imgur.com/rkZuI4I.png" title="source: imgur.com" /></a>
 </p>
-
+<hr width=800 align="center">
 <p align="center">Query</p>
 <p align="center"><a href="https://imgur.com/PR5bKNP"><img width=200 height=300 src="https://i.imgur.com/PR5bKNP.png" title="source: imgur.com" /></a></p>
 

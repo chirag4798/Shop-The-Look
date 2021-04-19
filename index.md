@@ -420,6 +420,13 @@ class TFLiteModel:
 tflite_model = TFLiteModel(model_path=TFLITE_MODEL_PATH, batch_size=32, input_shape=(224,224,3), output_shape=(256,))
 outputs = tflite_model(inputs)
 ```  
+<p align="justify">Below are some plots showing the imporvements in the models after Post Training Quantization.</p>
+
+<p align="center"><img width=800 height=400 src="https://i.imgur.com/BZCxns7.png" title="source: imgur.com" /></p>   
+<p align="center"><a href="https://imgur.com/BZCxns7">Quantization Summary for Gender Classification Model</a></p>
+
+<p align="center"><img width=800 height=400 src="https://i.imgur.com/FTcVAtU.png" title="source: imgur.com" /></p>  
+<p align="center"><a href="https://imgur.com/FTcVAtU">Quantization Summary for Embedding Generation Model</a></p>
 
 <p align="justify">After the models are optimized we can create the final pipeline as shown in the diagram below</p>
 <p align="center">

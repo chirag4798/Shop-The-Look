@@ -50,6 +50,7 @@ for search_term in search_terms:
                 image = product.find_element_by_tag_name("img")
             except:
                 continue
+            total += 1
             image_urls.append(image.get_property("src"))
             product_urls.append(product.find_element_by_tag_name("a").get_property("href"))
     try:
